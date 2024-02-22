@@ -103,33 +103,40 @@ p{
 section{
     padding: 20px;
 }
-#planning{
-    background-color: var(--color-section-color);
-}
- #benefits{
-    background-color: var(--color-section-color);
-}
-#about-us{
-    background-color: var(--color-section-color);
-}
+
 h3{
     margin: 20px 0;
 }
-#features .container > .card{
+#features .container> .demo{
     padding-bottom: 0;
 }
+#features p{
+    padding-bottom: 20px;
+}
 
-
+/* BUTTON */
+.button{
+    background-color: var(--color-accent-color);
+    color: var(--color-negative-color);
+    padding: 9px 50px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
 
 /* IMAGE UTILITY */
 img{
     width: 100%;
     display: block;
+    padding-bottom: 0;
 }
 .img-content{
     width: 80%;
     margin: 0 auto;
+    margin-top: 30px;
+    
 }
+
 
 .foto{
     width: 30%;
@@ -141,8 +148,20 @@ img{
     object-fit: cover;
 }
 
+/* BG UTILITY */
+#planning{
+    background-color: var(--color-section-color);
+}
+ #benefits{
+    background-color: var(--color-section-color);
+}
+#about-us{
+    background-color: var(--color-section-color);
+}
+/* COLORS */
 
-/* ROUNDED UTILITY */
+
+/* BORDER */
 .small-rounded{
     border-radius: 20px;
 }
@@ -160,7 +179,6 @@ img{
 /* container */
 .container{
     width: 100%;
-    padding: 20%;
 }
 
 /***********************************
@@ -190,15 +208,26 @@ footer{
     i.fa-solid.fa-bars{
         display: none;
     }
-    #features .container > .card{
+    #features .container> .app{
         display: flex;
     }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+    .card{
+        width: calc(100% / 2 - 20px);
+    }
+    
     .text-content{
         width: 60%;
         padding-bottom: 20px;
     }
     .img-content{
         width: 40%;
+        align-self: flex-end;
     }
     .img-content img{
         width: 60%;
