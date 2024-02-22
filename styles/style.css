@@ -9,3 +9,12 @@
 html{
     scroll-behavior: smooth;
 }
+:root {
+    --color-section-color: #9792e4;
+    --color-accent-color: #0084fd;
+    --color-contrast-color: #b5ddff;
+    --color-accent-color-secondary: #fdc15f;
+    --color-footer-color: #333333;
+    --color-main-color: #000000;
+    --color-negative-color: #ffffff;
+}
