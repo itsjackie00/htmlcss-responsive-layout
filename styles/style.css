@@ -113,6 +113,16 @@ h3{
 #features p{
     padding-bottom: 20px;
 }
+.fa-solid.fa-arrow-down{
+    color: var(--color-main-color) ;
+}
+.p-bt-30{
+    padding-bottom: 30px;
+}
+/* COLUMN */
+.col-left ,img,h2,p{
+    margin-bottom: 40px;
+}
 
 /* BUTTON */
 .button{
@@ -120,8 +130,15 @@ h3{
     color: var(--color-negative-color);
     padding: 9px 50px;
     border-radius: 20px;
+    text-align: center;  
+}
+.circle-button{
+    background-color: var(--color-section-color);
+    padding: 5px 5px;
+    width: 30px;
+    border-radius: 50%;
     text-align: center;
-    
+    margin: 0 auto;
 }
 
 /* IMAGE UTILITY */
@@ -158,8 +175,13 @@ img{
 #about-us{
     background-color: var(--color-section-color);
 }
+.bg-white{
+    background-color: var(--color-negative-color);
+}
 /* COLORS */
-
+.white-text{
+    color: var(--color-negative-color);
+}
 
 /* BORDER */
 .small-rounded{
@@ -213,12 +235,11 @@ footer{
     }
     .container{
         display: flex;
-        flex-wrap: wrap;
         gap: 20px;
         width: 100%;
     }
-    .card{
-        width: calc(100% / 2 - 20px);
+    #features{
+        width: calc(100% / 1 - 20px);
     }
     
     .text-content{
@@ -231,5 +252,8 @@ footer{
     }
     .img-content img{
         width: 60%;
+    }
+    .col-left, .col-right{
+        width: 50%;
     }
  }
