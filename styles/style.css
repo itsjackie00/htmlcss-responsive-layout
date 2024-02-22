@@ -9,7 +9,7 @@
 
 .debug {
     border: 1px solid black;
-    
+
 }
 
 /* ***********************************
@@ -33,13 +33,16 @@ html {
     --color-main-color: #000000;
     --color-negative-color: #ffffff;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--color-negative-color);
 }
+
 /************************************* 
       HEADER
 ************************************/
@@ -55,7 +58,8 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-header nav ul{
+
+header nav ul {
     position: absolute;
     top: 0;
     right: 0;
@@ -63,76 +67,99 @@ header nav ul{
     background-color: var(--color-accent-color);
     display: none;
 }
-header nav{
+
+header nav {
     position: relative;
 }
-header nav a{
+
+header nav a {
     display: block;
     padding: 5px 10px;
 }
-header nav:hover ul{
+
+header nav:hover ul {
     display: block;
 }
+
 /***********************************
       MAIN
 ************************************/
-main{
+main {
     padding-top: 70px;
 }
-.text-blue{
+
+.text-blue {
     color: var(--color-accent-color);
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.icon{
+
+.icon {
     font-size: 3em;
 }
-p{
+
+p {
     line-height: 1.8;
 }
 
 /* utility background */
-.bg-light{
+.bg-light {
     background-color: var(--color-contrast-color);
 }
 
 /*************************************
           SECTION
  *************************************/
-section{
+section {
     padding: 20px;
 }
 
-h3{
+h3 {
     margin: 20px 0;
 }
-#features .container> .demo{
+
+#features .container>.demo {
     padding-bottom: 0;
 }
-#features p{
+
+#features p {
     padding-bottom: 20px;
 }
-.fa-solid.fa-arrow-down{
-    color: var(--color-main-color) ;
+
+.fa-solid.fa-arrow-down {
+    color: var(--color-main-color);
 }
-.p-bt-30{
+
+.p-bt-30 {
     padding-bottom: 30px;
 }
+
+.test-info {
+    background-color: var(--color-section-color);
+    color: var(--color-negative-color);
+    
+}
+
 /* COLUMN */
-.col-left ,img,h2,p{
+.col-left,
+img,
+h2,
+p {
     margin-bottom: 40px;
 }
 
 /* BUTTON */
-.button{
+.button {
     background-color: var(--color-accent-color);
     color: var(--color-negative-color);
     padding: 9px 50px;
     border-radius: 20px;
-    text-align: center;  
+    text-align: center;
 }
-.circle-button{
+
+.circle-button {
     background-color: var(--color-section-color);
     padding: 5px 5px;
     width: 30px;
@@ -142,71 +169,92 @@ h3{
 }
 
 /* IMAGE UTILITY */
-img{
+img {
     width: 100%;
     display: block;
     padding-bottom: 0;
 }
-.img-content{
+
+.img-content {
     width: 80%;
     margin: 0 auto;
     margin-top: 30px;
-    
+
 }
 
 
-.foto{
+.foto {
     width: 30%;
-    aspect-ratio: 1 / 1;
+    margin: 0 auto;
 }
-.foto img{
+
+.foto img {
+    padding-top: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
 
 /* BG UTILITY */
-#planning{
+#planning {
     background-color: var(--color-section-color);
 }
- #benefits{
+
+#benefits {
     background-color: var(--color-section-color);
 }
-#about-us{
+
+#about-us {
     background-color: var(--color-section-color);
 }
-.bg-white{
+
+.bg-white {
     background-color: var(--color-negative-color);
 }
+
+.bg-purle {
+    background-color: var(--color-section-color);
+}
+
 /* COLORS */
-.white-text{
+.white-text {
     color: var(--color-negative-color);
 }
 
+.purples {
+    color: #9792e4;
+}
+
 /* BORDER */
-.small-rounded{
+.small-rounded {
     border-radius: 20px;
 }
-.big-rounded{
+
+.big-rounded {
     border-radius: 40px;
 }
-.circle{
+
+.circle {
     border-radius: 50%;
     overflow: hidden;
 }
-.card{
+
+.card {
     padding: 20px;
     margin-bottom: 20px;
 }
+
 /* container */
-.container{
+.container {
     width: 100%;
 }
 
 /***********************************
        FOOTER
 *************************************/
-footer{
+footer {
     background-color: var(--color-main-color);
     color: var(--color-negative-color);
     padding: 20px;
@@ -216,44 +264,53 @@ footer{
 /*********************************** 
         MEDIA QUERY
  ***********************************/
- @media screen and (min-width: 1200px){
-    header nav:hover ul{
+@media screen and (min-width: 1200px) {
+    header nav:hover ul {
         display: flex;
     }
-    header nav ul{
+
+    header nav ul {
         position: static;
         display: flex;
-        justify-content:flex-end;
+        justify-content: flex-end;
         align-items: center;
         width: 100%;
     }
-    i.fa-solid.fa-bars{
+
+    i.fa-solid.fa-bars {
         display: none;
     }
-    #features .container> .app{
+
+    #features .container>.app {
         display: flex;
     }
-    .container{
+
+    .container {
         display: flex;
         gap: 20px;
         width: 100%;
     }
-    #features{
+
+    #features {
         width: calc(100% / 1 - 20px);
     }
-    
-    .text-content{
+
+    .text-content {
         width: 60%;
         padding-bottom: 20px;
     }
-    .img-content{
+
+    .img-content {
         width: 40%;
         align-self: flex-end;
     }
-    .img-content img{
+
+    .img-content img {
         width: 60%;
     }
-    .col-left, .col-right{
+
+    .col-left,
+    .col-right {
         width: 50%;
     }
- }
+}
