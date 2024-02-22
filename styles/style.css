@@ -139,9 +139,17 @@ h3 {
 .test-info {
     background-color: var(--color-section-color);
     color: var(--color-negative-color);
-    
+    padding-top: 30px;
+    padding: 0 20px;
+    margin-bottom: 30px;
 }
-
+.name{
+    padding-bottom: 20px;
+}
+.benefit-sub-title{
+    font-size: 1.5em;
+    padding: 20px 0;
+}
 /* COLUMN */
 .col-left,
 img,
@@ -167,6 +175,15 @@ p {
     text-align: center;
     margin: 0 auto;
 }
+.btn-purple{
+    background-color: var(--color-section-color);
+    padding: 9px 5px;
+    border-radius: 20px;
+    text-align: center;
+    width: 140px;
+}
+
+
 
 /* IMAGE UTILITY */
 img {
@@ -184,14 +201,12 @@ img {
 
 
 .foto {
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .foto img {
-    padding-top: 20px;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 50%;
     display: block;
@@ -281,18 +296,17 @@ footer {
         display: none;
     }
 
-    #features .container>.app {
+    #features{
         display: flex;
+        flex-wrap: wrap;
     }
-
-    .container {
+    .card{
+        width: calc(100% / 2);
+    }
+    #planning .container {
         display: flex;
         gap: 20px;
         width: 100%;
-    }
-
-    #features {
-        width: calc(100% / 1 - 20px);
     }
 
     .text-content {
@@ -313,4 +327,5 @@ footer {
     .col-right {
         width: 50%;
     }
+    
 }
